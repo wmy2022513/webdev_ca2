@@ -9,7 +9,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.css">        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous"> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js"></script>
         <script>
             function reply_click(clicked_object){
@@ -41,16 +41,16 @@
                     <p class="lead">This is Part1.2</p>
                 </div>
                 <div class="col-lg-2 order-1 mb-3 d-flex flex-column gap-2 mx-auto align-items-stretch">
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT count(hire_date) as mycount FROM employees where hire_date = '1991-05-01'" onClick="reply_click(this)">1.2.1</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT emp_id,count(*) as numtitle FROM titles group by emp_id having count(*)>=2 LIMIT 100" onClick="reply_click(this)">1.2.2 </button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT gender,emp_id,birth_date,first_name,last_name,hire_date FROM employees where gender= 'F' LIMIT 100" onClick="reply_click(this)">1.2.3</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT emp_id,first_name,last_name,hire_date FROM employees where hire_date < '1986-01-01' and last_name = 'Simmel' LIMIT 100" onClick="reply_click(this)">1.2.4</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT last_name,count(last_name) as totalwithB FROM employees WHERE last_name like 'B%' LIMIT 100" onClick="reply_click(this)">1.2.5</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training(trainer_no INTEGER PRIMARY KEY AUTOINCREMENT,first_name varchar(30) NOT NULL,last_name varchar(30) NOT NULL,t_module varchar(20)) " onClick="reply_click(this)">1.2.6</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="Insert into emp_training (first_name,last_name,t_module) values('Joe','Bloggs','Google Doc') , ('Fred','Bloggs','Google Sheets')" onClick="reply_click(this)">1.2.7</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="DROP table emp_training" onClick="reply_click(this)">1.2.8</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT count(hire_date) AS mycount &#10;FROM employees &#10;WHERE hire_date = '1991-05-01' &#10;LIMIT 100" onClick="reply_click(this)">1.2.1</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT emp_id,count(*) AS numtitle &#10;FROM titles &#10;GROUP BY emp_id having count(*)>=2 &#10;LIMIT 100" onClick="reply_click(this)">1.2.2 </button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT gender,emp_id,birth_date,first_name,last_name,hire_date &#10;FROM employees &#10;WHERE gender= 'F' &#10;LIMIT 100" onClick="reply_click(this)">1.2.3</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT emp_id,first_name,last_name,hire_date &#10;FROM employees &#10;WHERE hire_date < '1986-01-01' AND last_name = 'Simmel' &#10;LIMIT 100" onClick="reply_click(this)">1.2.4</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT last_name,count(last_name) AS totalwithB &#10;FROM employees &#10;WHERE last_name &#10;LIKE 'B%' &#10;LIMIT 100" onClick="reply_click(this)">1.2.5</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training(&#10;trainer_no INTEGER PRIMARY KEY AUTOINCREMENT,&#10;first_name varchar(30) NOT NULL,&#10;last_name varchar(30) NOT NULL,&#10;t_module varchar(20)&#10;) " onClick="reply_click(this)">1.2.6</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="INSERT INTO emp_training (first_name,last_name,t_module) &#10;VALUES('Joe','Bloggs','Google Doc') , &#10;('Fred','Bloggs','Google Sheets')" onClick="reply_click(this)">1.2.7</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="DROP TABLE emp_training" onClick="reply_click(this)">1.2.8</button>
                     <button name="1.1.1" class="btn btn-success btn-block" data-sql="ALTER TABLE employees ADD email_address varchar(20)" onClick="reply_click(this)">1.2.9</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="Update employees Set email_address='GeorgiFacellotogfacello@gmail.com' where emp_id = 10001" onClick="reply_click(this)">1.2.10</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="UPDATE employees &#10;SET email_address='GeorgiFacellotogfacello@gmail.com' &#10;WHERE emp_id = 10001" onClick="reply_click(this)">1.2.10</button>
                 </div>
                 <div class="col-lg-10 order-2 border-success">
                     <textarea id="commands" class="mb-5">TEXT</textarea>
