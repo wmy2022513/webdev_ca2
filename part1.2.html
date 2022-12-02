@@ -46,11 +46,11 @@
                     <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT gender,emp_id,birth_date,first_name,last_name,hire_date FROM employees where gender= 'F' LIMIT 100" onClick="reply_click(this)">1.2.3</button>
                     <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT emp_id,first_name,last_name,hire_date FROM employees where hire_date < '1986-01-01' and last_name = 'Simmel' LIMIT 100" onClick="reply_click(this)">1.2.4</button>
                     <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT last_name,count(last_name) as totalwithB FROM employees WHERE last_name like 'B%' LIMIT 100" onClick="reply_click(this)">1.2.5</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT * FROM employees LIMIT 100" onClick="reply_click(this)">1.2.6(not yet</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT * FROM employees LIMIT 100" onClick="reply_click(this)">1.2.7(not yet</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT * FROM employees LIMIT 100" onClick="reply_click(this)">1.2.8(not yet</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT * FROM employees LIMIT 100" onClick="reply_click(this)">1.2.9(not yet</button>
-                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="SELECT * FROM employees LIMIT 100" onClick="reply_click(this)">1.2.10(not yet</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="CREATE TABLE emp_training(trainer_no INTEGER PRIMARY KEY AUTOINCREMENT,first_name varchar(30) NOT NULL,last_name varchar(30) NOT NULL,t_module varchar(20)) " onClick="reply_click(this)">1.2.6</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="Insert into emp_training (first_name,last_name,t_module) values('Joe','Bloggs','Google Doc') , ('Fred','Bloggs','Google Sheets')" onClick="reply_click(this)">1.2.7</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="DROP table emp_training" onClick="reply_click(this)">1.2.8</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="ALTER TABLE employees ADD email_address varchar(20)" onClick="reply_click(this)">1.2.9</button>
+                    <button name="1.1.1" class="btn btn-success btn-block" data-sql="Update employees Set email_address='GeorgiFacellotogfacello@gmail.com' where emp_id = 10001" onClick="reply_click(this)">1.2.10</button>
                 </div>
                 <div class="col-lg-10 order-2 border-success">
                     <textarea id="commands" class="mb-5">TEXT</textarea>
