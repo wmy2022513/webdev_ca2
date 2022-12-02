@@ -11326,6 +11326,25 @@ th, td {
 
 }
 
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: transparent;
+  border-color: transparent;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+/* .nav-link{
+  color:#fff;
+} */
+.nav-link.active{
+  font-weight: bold;
+}
+
+
 /* #left-button{
   color: #fff;
   background-color: #fff;
