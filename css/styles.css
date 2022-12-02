@@ -11318,3 +11318,16 @@ table {
 th, td {
 	border:1px solid #777;
 }
+
+#execute{
+  color: #fff;
+  background-color: #20c997;
+  border-color: #20c997;
+
+}
+
+/* #left-button{
+  color: #fff;
+  background-color: #fff;
+  border-color: #20c997;
+} */
