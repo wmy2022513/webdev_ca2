@@ -9,7 +9,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.1/codemirror.js"></script>
         <script>
             function reply_click(clicked_object){
@@ -46,7 +46,7 @@
                     <button name="1.3.3" class="btn btn-success btn-block" data-sql="SELECT count(emp_id) as nuemployees &#10;FROM salaries &#10;Where to_date ='9999-01-01' and (salary>90000 and salary<90040) &#10;LIMIT 100" onClick="reply_click(this)">1.3.3</button>
                     <button name="1.3.4" class="btn btn-success btn-block" data-sql="SELECT last_name,first_name,salary &#10;FROM employees e &#10;INNER JOIN salaries s on e.emp_id = s.emp_id &#10;WHERE salary>'90000' AND to_date = '9999-01-01' &#10;GROUP BY last_name,first_name &#10;ORDER BY LOWER(last_name) DESC, LOWER(first_name) DESC &#10;LIMIT 100" onClick="reply_click(this)">1.3.4</button>
                     <button name="1.3.5" class="btn btn-success btn-block" data-sql="SELECT first_name,last_name,salary,from_date,to_date &#10;FROM employees e &#10;INNER JOIN salaries s ON e.emp_id = s.emp_id &#10;WHERE e.emp_id = 10012 &#10;LIMIT 100" onClick="reply_click(this)">1.3.5</button>
-                    <button name="1.3.6" class="btn btn-success btn-block" data-sql="this answer will be in the pdf" onClick="reply_click(this)">1.3.6</button>
+                    <button name="1.3.6" class="btn btn-success btn-block" data-sql="A)4 &#10;B)emp_id and from_date &#10;C)emp_id" onClick="reply_click(this)">1.3.6</button>
                     <button name="1.3.7" class="btn btn-success btn-block" data-sql="this answer will be in the pdf" onClick="reply_click(this)">1.3.7</button>
                 </div>
                 <div class="col-lg-10 order-2 border-success">
